@@ -1,0 +1,42 @@
+.main {
+  width: 100vw;
+  height: 100vh;
+  background-color: $dark-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .container {
+    max-width: 60%;
+    background-color: $light-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: .5rem;
+    border: 1px solid $border-color;
+  }
+
+  .title {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+
+  }
+
+  .plus {
+    border: 1px solid $border-color;
+    border-radius: .5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: .3rem 8rem;
+
+    &:hover {
+      scale: 105%;
+      border: 2px solid $border-color;
+    }
+  }
+}
