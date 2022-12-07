@@ -1,30 +1,87 @@
 .main {
-  height: 100vh;
   background-color: $main-color;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
+  width: 100%;
+  max-width: 450px;
+  margin: 50px 0;
+  padding: 2rem 1rem;
+  border-radius: 1rem;
 
-  .title-main {
-    text-transform: uppercase;
-    font-size: 3rem;
-    font-weight: 700;
-  }
+  .top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
 
-  .tasks {
-    width: 60%;
-    height: auto;
-    border: 1px solid $border-color;
+    .addNewTask {
+      width: 350px;
+      height: 2.5rem;
+      padding: .5rem;
+      border: 1px solid $input-color;
+      border-radius: 1rem;
+      outline: none;
+      background-color: $input-color;
+      font-size: 1.250rem;
+      color: $text-color;
 
-    .task {
+      &::placeholder {
+        opacity: .2;
+        color: $text-color;
+      }
+    }
+
+    .btnPlus {
+      width: 2.5rem;
+      height: 2.5rem;
+      border: 1px solid $input-color;
+      border-radius: 1rem;
+      background-color: $input-color;
+      color: $text-color;
+      outline: none;
       display: flex;
-      flex-direction: column;
       align-items: center;
       justify-content: center;
-      list-style: none;
+      transition: .5s;
 
-      #checkbox {}
+      &:hover {
+        scale: 110%;
+        border: 1px solid #000;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .listTasks {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    .task {
+      padding: .725rem;
+      background-color: $input-color;
+      border-radius: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .btnAction {
+        border-radius: 50%;
+        border: 1px solid $text-color;
+        background-color: $main-color;
+        width: 2.5rem;
+        height: 2.5rem;
+        color: $text-color;
+        cursor: pointer;
+        margin-right: .5rem;
+
+        &:hover {
+          scale: 110%;
+        }
+
+        &.btnRemove {
+          &:hover {
+            color: $input-color;
+          }
+        }
+      }
     }
   }
 }

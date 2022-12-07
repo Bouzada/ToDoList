@@ -22,15 +22,24 @@
 
 <body>
   <div class="main">
-    <h1 class="title-main">Planeje seu dia!</h1>
-
-    <div class="container container-fluid tasks">
-      <ul class="task">
-        <li class="task=item">
-          <input type="checkbox" name="checkbox" id="checkbox">
-        </li>
-      </ul>
+    <div class="top">
+      <input type="text" name="task" class="addNewTask" id="addNewTask" placeholder="Add nova Task">
+      <button class="btn btnPlus" id="btnPlusTask"><i class="fa-solid fa-plus"></i></button>
     </div>
+
+    <ul class="listTasks" id="listTasks">
+      <li class="task">
+        <span class="taskText">Texto 1</span>
+        <div class="">
+          <button class="btn btnAction btnEdit">
+            <i class="fa-solid fa-pencil"></i>
+          </button>
+          <button class="btn btnAction btnRemove">
+            <i class="fa-solid fa-trash"></i>
+          </button>
+        </div>
+      </li>
+    </ul>
   </div>
 
   <!-- BootStrap JS -->
