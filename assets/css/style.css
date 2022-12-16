@@ -27,7 +27,7 @@ body {
   justify-content: space-between;
   margin-bottom: 3rem;
 }
-.main .top .addNewTask {
+.main .top .InputAddNewTask {
   width: 350px;
   height: 2.5rem;
   padding: 0.5rem;
@@ -38,7 +38,7 @@ body {
   font-size: 1.25rem;
   color: #F5F5F5;
 }
-.main .top .addNewTask::placeholder {
+.main .top .InputAddNewTask::placeholder {
   opacity: 0.2;
   color: #F5F5F5;
 }
