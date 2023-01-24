@@ -8,9 +8,6 @@ function newTask() {
   task.innerHTML = `
     <span class="taskText">${input}</span>
     <div class="">
-      <button class="btn btnAction btnEdit" id="btnEdit">
-        <i class="fa-solid fa-pencil"></i>
-      </button>
       <button class="btn btnAction btnRemove" id="btnRemove"> 
         <i class="fa-solid fa-trash"></i>
       </button>
@@ -22,5 +19,3 @@ function newTask() {
 
   listTasks.appendChild(task)
 }
-
-
