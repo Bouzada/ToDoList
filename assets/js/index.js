@@ -14,7 +14,7 @@ document.getElementById('btnAddTask').addEventListener('click', function() {
 
   const task = document.createElement('li')
   task.classList = "task"
-  task.id = getRandomInt(min, max)
+  task.id = "task-" + getRandomInt(min, max)
   task.innerHTML = `
     <span class="taskText">${input}</span>
     <div class="">
