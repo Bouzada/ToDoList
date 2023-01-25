@@ -1,6 +1,6 @@
 const listTasks = document.getElementById('listTasks')
 
-function newTask() {
+document.getElementById('btnAddTask').addEventListener('click', function() {
   const input = document.getElementById('addNewTask').value
 
   const task = document.createElement('li')
@@ -18,4 +18,7 @@ function newTask() {
   `
 
   listTasks.appendChild(task)
-}
+
+  input.value = ''
+})
+
